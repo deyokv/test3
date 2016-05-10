@@ -37,7 +37,7 @@ GO
 ALTER TABLE [Sales].[PersonCreditCard]
 	WITH CHECK
 	ADD CONSTRAINT [FK_PersonCreditCard_Person_BusinessEntityID]
-	FOREIGN KEY ([BusinessEntityID]) REFERENCES [Person].[Person] ([BusinessEntityID])
+	FOREIGN KEY ([BusinessEntityID]) REFERENCES [Person].[Person.Izmenjena] ([BusinessEntityID])
 ALTER TABLE [Sales].[PersonCreditCard]
 	CHECK CONSTRAINT [FK_PersonCreditCard_Person_BusinessEntityID]
 

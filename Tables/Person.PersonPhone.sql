@@ -28,7 +28,7 @@ GO
 ALTER TABLE [Person].[PersonPhone]
 	WITH CHECK
 	ADD CONSTRAINT [FK_PersonPhone_Person_BusinessEntityID]
-	FOREIGN KEY ([BusinessEntityID]) REFERENCES [Person].[Person] ([BusinessEntityID])
+	FOREIGN KEY ([BusinessEntityID]) REFERENCES [Person].[Person.Izmenjena] ([BusinessEntityID])
 ALTER TABLE [Person].[PersonPhone]
 	CHECK CONSTRAINT [FK_PersonPhone_Person_BusinessEntityID]
 
